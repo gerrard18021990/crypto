@@ -1,0 +1,668 @@
+body {
+    background-color: #fff !important;
+    color: #000 !important;
+    font-weight: 400 !important;
+    line-height: 1.5 !important
+}
+
+.h1, h1 {
+    font-size: 3.5em;
+    line-height: 1.15;
+    margin-bottom: 30px
+}
+
+.h2, h2 {
+    font-size: 2.5em
+}
+
+.h3, h3 {
+    font-size: 1.825em;
+    line-height: 1.4em
+}
+
+.h4, h4 {
+    font-size: 1.5em;
+    line-height: 1.45em;
+    margin-top: 30px;
+    margin-bottom: 15px
+}
+
+.h5, h5 {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-bottom: 15px
+}
+
+.h6, h6 {
+    font-size: .9em;
+    font-weight: 700;
+    text-transform: uppercase
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.2;
+    color: inherit
+}
+
+.nav {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: .63rem !important
+}
+
+:root {
+    --gold: #d7b46a
+}
+
+.icon-gold {
+    color: var(--gold)
+}
+
+.btn.btn-gold, .btn.btn-gold:hover {
+    color: #fff;
+    background-color: var(--gold);
+    border-color: var(--gold);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(153, 153, 153, .14), 0 3px 1px -2px rgba(153, 153, 153, .2), 0 1px 5px 0 rgba(153, 153, 153, .12);
+    box-shadow: 0 2px 2px 0 rgba(153, 153, 153, .14), 0 3px 1px -2px rgba(153, 153, 153, .2), 0 1px 5px 0 rgba(153, 153, 153, .12)
+}
+
+.btn-gold > a, .btn-gold > a:hover {
+    color: #fff;
+    font-size: .63rem !important
+}
+
+.navbar-transparent .blacklogo {
+    display: none !important
+}
+
+nav.navbar:not(.navbar-transparent) .whitelogo {
+    display: none !important
+}
+
+.f21 {
+    font-size: 21px;
+    line-height: 1.4em
+}
+
+.f15 {
+    font-size: 15px
+}
+
+.f16 {
+    font-size: 16px;
+    line-height: 1.688rem !important
+}
+
+.f18 {
+    font-size: 18px
+}
+
+.f14 {
+    font-size: 14px
+}
+
+.f35 {
+    font-size: 35px;
+    line-height: 1.3 !important
+}
+
+.f49 {
+    font-size: 49px
+}
+
+.bold {
+    font-weight: 700
+}
+
+.b2icon > img {
+    display: block;
+    margin: 0 auto
+}
+
+.b2icon {
+    height: 80px
+}
+
+.section-white {
+    background-color: #fff
+}
+
+.block120-80 {
+    padding-top: 120px;
+    padding-bottom: 80px
+}
+
+.block120 {
+    padding-top: 120px
+}
+
+.mb-5rem {
+    margin-bottom: 5rem
+}
+
+.f-light {
+    font-weight: lighter
+}
+
+.cGray {
+    color: #9a9a9a
+}
+
+.cGold {
+    color: var(--gold)
+}
+
+.btn-transform-none {
+    text-transform: none !important
+}
+
+.psimg {
+    min-height: 50px
+}
+
+.bGray {
+    background-color: #f5f5f5
+}
+
+.bGray1 {
+    background-color: #f2f2f2
+}
+
+.bg-main-1 {
+    background: url(/assets/images/b4bg1.jpg);
+    background-size: cover
+}
+
+.bg-main-2 {
+    background: url(/assets/images/b9bg1.jpg);
+    background-size: cover
+}
+
+.bg-main-3 {
+    background: url(/assets/images/b11bg3.jpg);
+    background-size: cover
+}
+
+.bg-main-top {
+}
+
+.footer-bg {
+}
+
+.fc-white {
+    color: #fff !important
+}
+
+.fc-black {
+    color: #000 !important
+}
+
+.fc-gold {
+    color: var(--gold) !important
+}
+
+.o6 {
+    opacity: .6
+}
+
+.o8 {
+    opacity: .8
+}
+
+.b4icon {
+    min-width: 31px;
+    margin-right: 20px;
+    margin-top: -6px
+}
+
+.b4textml {
+    margin-left: 51px
+}
+
+.card-collapse .card-header a:hover, .card-collapse .card-header a:active, .card-collapse .card-header a[aria-expanded=true] {
+    color: #000 !important
+}
+
+.cGray1 {
+    color: #444
+}
+
+a.btn.btn-social {
+    color: var(--gold);
+    background-color: #fff;
+    padding: 12px !important;
+    width: 40px;
+    height: 40px;
+    margin-left: 5px
+}
+
+.card.card-round {
+    border-radius: 150px
+}
+
+ul.nav.nav-pills .nav-item .nav-link.active, ul.nav.nav-pills .nav-item .nav-link.active.nav-pills.nav-pills-info .nav-item .nav-link.active, .nav-pills.nav-pills-info .nav-item .nav-link.active:focus, .nav-pills.nav-pills-info .nav-item .nav-link.active:hover {
+    background-color: var(--gold);
+    -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px var(--gold);
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, .2), 0 13px 24px -11px var(--gold)
+}
+
+.footer hr {
+    border-top: 1px solid rgba(255, 255, 255, .3)
+}
+
+.title, .card-title, .info-title, .footer-brand, .footer-big h5, .footer-big h4, .media .media-heading {
+    font-family: inherit !important
+}
+
+.icon img, .icon svg {
+    height: 36px;
+    width: 36px
+}
+
+.info-horizontal .icon {
+    float: left;
+    margin-right: 10px;
+    margin-top: 24px
+}
+
+.info {
+    margin: 0 auto;
+    max-width: 360px;
+    padding: 70px 0 30px
+}
+
+.nav-pills > li > a.nav-link.active:focus svg path, .nav-pills > li > a.nav-link.active:hover svg path, .nav-pills > li > a.active svg circle, .nav-pills > li > a.nav-link.active:focus svg path, .nav-pills > li > a.nav-link.active:hover svg path, .nav-pills > li > a.active svg ellipse, .nav-pills > li > a.nav-link.active:focus svg path, .nav-pills > li > a.nav-link.active:hover svg path, .nav-pills > li > a.active svg path {
+    color: #fff;
+    fill: #fff;
+    stroke: #fff
+}
+
+.nav-pills > li > a:focus svg path, .nav-pills > li > a:hover svg path, .nav-pills > li > a svg circle, .nav-pills > li > a:focus svg path, .nav-pills > li > a:hover svg path, .nav-pills > li > a svg ellipse, .nav-pills > li > a:focus svg path, .nav-pills > li > a:hover svg path, .nav-pills > li > a svg path {
+    color: #818181;
+    fill: #818181;
+    stroke: #818181
+}
+
+body.i-blog-post {
+    background-color: #e5e5e5 !important;
+    color: #3c4858 !important
+}
+
+body.contacts .navbar.navbar-transparent, body.i-blog-post .navbar.navbar-transparent {
+    background-color: #3c4858 !important;
+    padding-top: 10px !important
+}
+
+.partner .benefit .procent {
+    color: #dbb65c;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 40px
+}
+
+.change-plan-text p {
+    display: none
+}
+
+.change-plan-text p.active {
+    display: block
+}
+
+.bg_vid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #000;
+    width: 100%;
+    height: 100%
+}
+
+.bg_vid video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 104%;
+    margin-left: -2%
+}
+
+.noUi-marker {
+    background: #ccc;
+    height: 5px;
+    margin-left: 0;
+    position: absolute;
+    width: 0
+}
+
+.noUi-value {
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    font-weight: 700
+}
+
+.noUi-value:nth-last-of-type(1) {
+    left: 91% !important
+}
+
+input.round-input {
+    border: 1px solid #e3e3e3;
+    border-radius: 100px;
+    padding-left: 15px;
+    background-image: none
+}
+
+div.slider .noUi-handle {
+    border-color: var(--gold)
+}
+
+div.slider .noUi-handle {
+    background-color: var(--gold)
+}
+
+div.slider .noUi-connect {
+    background-color: var(--gold);
+    border-radius: 4px
+}
+
+.form-control, input.is-focused .form-control {
+    background-image: none !important
+}
+
+.card-with-bg {
+    background: url(/assets/images/cardbg.jpg) !important;
+    background-size: cover !important
+}
+
+.card-with-bg * {
+    color: #fff
+}
+
+.card-with-bg hr {
+    border-top: 1px solid rgba(255, 255, 255, .1)
+}
+
+body.i-about-us {
+    color: #3c4858 !important
+}
+
+.about-tabs .nav.nav-pills {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0
+}
+
+.about-tabs h4 {
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.about-tabs > .row {
+    margin-left: -25px;
+    margin-right: -25px
+}
+
+.about-tabs {
+    padding-bottom: 80px;
+    width: 100%
+}
+
+.about-us .about-office img {
+    width: 100%
+}
+
+.tab-pane ul li {
+    font-size: 14px;
+    margin: 0 0 10px
+}
+
+@media (max-width: 991px) {
+    .about-tabs .tab-pane-right {
+        display: none
+    }
+}
+
+.about-tabs .tab-pane-right {
+    padding: 10px 0 10px 20px;
+    text-align: right
+}
+
+.partner .page-header {
+    height: 430px
+}
+
+.partner .page-header .container {
+    padding-top: 5px
+}
+
+.partner .page-header .container .description {
+    color: #424958;
+    font-size: 1.5em
+}
+
+.partner .benefit .material-icons {
+    color: #dbb65c;
+    font-size: 55px;
+    margin-bottom: 45px
+}
+
+.partner .main-raised {
+    margin: -60px 61px 60px
+}
+
+.partner .benefit > div > h4 {
+    margin-bottom: 50px
+}
+
+.partner .benefit img {
+    height: 50px;
+    margin-bottom: 45px;
+    text-align: center
+}
+
+.partner .main .container2 {
+    margin-bottom: 90px;
+    padding-top: 55px
+}
+
+.partner .benefit {
+    margin-bottom: 40px;
+    text-align: center
+}
+
+.partner .proposal {
+    padding-bottom: 90px;
+    text-align: center
+}
+
+.partner .proposal .description {
+    color: #999;
+    font-size: 1.2em;
+    line-height: 2em;
+    margin-top: 60px
+}
+
+@media (min-width: 768px) {
+    .partner .main .container {
+        width: 630px
+    }
+}
+
+@media (min-width: 992px) {
+    .partner .main .container {
+        width: 927px
+    }
+}
+
+@media (min-width: 1200px) {
+    .partner .main .container {
+        width: 1024px
+    }
+}
+
+.faq .page-header {
+    height: 70vh
+}
+
+.faq .nav-pills {
+    display: inline-block;
+    margin-top: 40px
+}
+
+.faq .nav .nav-item {
+    display: inline-block
+}
+
+.faq .nav-pills .nav-item .nav-link {
+    color: #fff !important
+}
+
+.faq .main-raised {
+    border-radius: 6px;
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, .14), 0 6px 30px 5px rgba(0, 0, 0, .12), 0 8px 10px -5px rgba(0, 0, 0, .2);
+    margin: -60px 30px 45px
+}
+
+.faq .card-collapse .card-header a {
+    font-weight: 500
+}
+
+.faq .card-collapse .card-header a:hover, .card-collapse .card-header a:active, .card-collapse .card-header a[aria-expanded=true] {
+    color: #dbb65c !important
+}
+
+.faq .card-body {
+    font-weight: 300
+}
+
+@media (max-width: 991px) {
+    .faq .tab-content .card-content {
+        padding-left: 60px;
+        padding-right: 60px
+    }
+
+    .page-header .title {
+        font-size: 37px
+    }
+}
+
+.blog-post .page-header > .container {
+    margin-top: 185px
+}
+
+.blog-post .page-header {
+    height: 270px;
+    min-height: 270px !important
+}
+
+.blog-post .read-more {
+    color: #dbb65c
+}
+
+.blog-post .read-more:hover {
+    color: #000
+}
+
+.pagination > .page-item.active > a, .pagination > .page-item.active > a:focus, .pagination > .page-item.active > a:hover, .pagination > .page-item.active > span, .pagination > .page-item.active > span:focus, .pagination > .page-item.active > span:hover {
+    background-color: #dbb65c !important;
+    border-color: #dbb65c !important
+}
+
+.semibold {
+    font-weight: 500
+}
+
+.tes-3 .carousel .carousel-inner .carousel-item .card {
+    max-width: 1140px;
+    padding-top: 120px !important;
+    padding-bottom: 120px !important;
+    margin: auto;
+    color: #fff
+}
+
+.bg-slider-1 {
+    background: url(/assets/images/slider/s1.jpg) !important;
+    background-size: cover !important
+}
+
+.bg-slider-2 {
+    background: url(/assets/images/slider/s2.jpg) !important;
+    background-size: cover !important
+}
+
+.bg-slider-3 {
+    background: url(/assets/images/slider/s3.jpg) !important;
+    background-size: cover !important
+}
+
+.bg-slider-4 {
+    background: url(/assets/images/slider/s4.jpg) !important;
+    background-size: cover !important
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus, .dropdown-menu a:hover, .dropdown-menu a:focus, .dropdown-menu a:active {
+    -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px #d7b46a !important;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px #d7b46a !important;
+    background-color: var(--gold) !important;
+    color: #fff
+}
+
+#map {
+    height: calc(100vh - 68px);
+    margin-top: 68px;
+    position: fixed !important;
+    width: 100%
+}
+
+li.nav-item.btn.btn-gold > a, li.nav-item.btn.btn-gold > a:hover {
+    color: #000
+}
+
+#calcPalns.nav-pills > li {
+    float: none;
+    display: inline-block
+}
+
+#calcPalns.nav-pills {
+    text-align: center;
+    display: block
+}
+
+#faqpills.nav-pills > li {
+    float: none;
+    display: inline-block
+}
+
+#faqpills.nav-pills {
+    text-align: center;
+    display: block
+}
+
+#particles-js {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    margin-top: 100px
+}
+
+.bg-black {
+    background-color: #000
+}
+
+.mc-nav {
+    display: none !important
+}
+
+div.mc-menu.mc-grid {
+    display: none !important
+}
