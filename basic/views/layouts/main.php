@@ -35,25 +35,24 @@ AppAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+    $menu = [];
+    $menu[] = ['label' => 'Home', 'url' => ['/site/index']];
+    if (Yii::$app->user->isGuest) {
+        $menu[] = ['label' => 'Авторизация', 'url' => ['/site/login']];
+        $menu[] = ['label' => 'Регистрация', 'url' => ['/site/registration']];
+    } else {
+        $menu[] = '<li>'
+            . Html::beginForm(['/cabinet/index'], 'post')
+            . Html::submitButton(
+                'Кабинет (' . Yii::$app->user->identity->login . ')',
+                ['class' => 'btn btn-link']
+            )
+            . Html::endForm()
+            . '</li>';
+    }
     echo Nav::widget([
         'options' => ['class' => 'navbar-nav navbar-right'],
-        'items' => [
-            ['label' => 'Home', 'url' => ['/site/index']],
-            ['label' => 'About', 'url' => ['/site/about']],
-            ['label' => 'Contact', 'url' => ['/site/contact']],
-            Yii::$app->user->isGuest ? (
-                ['label' => 'Login', 'url' => ['/site/login']]
-            ) : (
-                '<li>'
-                . Html::beginForm(['/site/logout'], 'post')
-                . Html::submitButton(
-                    'Logout (' . Yii::$app->user->identity->username . ')',
-                    ['class' => 'btn btn-link logout']
-                )
-                . Html::endForm()
-                . '</li>'
-            )
-        ],
+        'items' => $menu,
     ]);
     NavBar::end();
     ?>
