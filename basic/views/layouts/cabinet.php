@@ -1,4 +1,6 @@
 <?php
+use yii\helpers\Html;
+
 $user = Yii::$app->user->getIdentity();
 ?>
 <!DOCTYPE html>
@@ -35,7 +37,7 @@ $user = Yii::$app->user->getIdentity();
                         <a href="/account"><img src="" alt=""></a>
                     </div>
                 <span style="color:white">
-                    <?= \yii\helpers\Html::a($user->login, ['/cabinet/account']); ?>
+                    <?= Html::a($user->login, ['/cabinet/account']); ?>
                     <br>
                     <a href="/operation?add=CASHIN">
                         <strong> 0.00 $</strong>
@@ -47,10 +49,7 @@ $user = Yii::$app->user->getIdentity();
             </div>
             <ul class="nav">
                 <li class="active">
-                    <a href="/cabinet">
-                        <i class="material-icons">dashboard</i>
-                        <p> Панель управления </p>
-                    </a>
+                    <?= Html::a('<i class="material-icons">dashboard</i> <p> Панель управления </p>', ['/cabinet/index']); ?>
                 </li>
                 <li>
                     <a data-toggle="collapse" href="#balans" class="collapsed" aria-expanded="false">
@@ -101,10 +100,7 @@ $user = Yii::$app->user->getIdentity();
                     </div>
                 </li>
                 <li>
-                    <a href="/refsys">
-                        <i class="material-icons">people</i>
-                        <p>Партнеры </p>
-                    </a>
+                    <?= Html::a('<i class="material-icons">people</i> <p>Партнеры </p>', ['/cabinet/referral']); ?>
                 </li>
                 <li>
                     <a href="/operations">
@@ -150,6 +146,17 @@ $user = Yii::$app->user->getIdentity();
              style="background-image: url(/static/tpl/assets/img/pages/cabinet/fon1.jpg) "></div>
     </div>
     <div class="main-panel">
+        <ul class="nav navbar-nav navbar-right" style="margin-right: 20px">
+            <li>
+                <?= Html::a('<span class="sidebar-mini"></span> <i class="material-icons">home</i>', ['/cabinet/index']); ?>
+            </li>
+            <li>
+                <?= Html::a('<span class="sidebar-mini"></span> <i class="material-icons">person</i>', ['/cabinet/account']); ?>
+            </li>
+            <li>
+                <?= Html::a('<span class="sidebar-mini"></span> <i class="icon">Exit</i>', ['/cabinet/logout']); ?>
+            </li>
+        </ul>
         <?= $content; ?>
     </div>
 </div>

@@ -16,6 +16,7 @@ class m181013_162723_create_table_user extends Migration
             'password' => $this->string()->notNull(),
             'token' => $this->string()->notNull(),
             'auth_key' => $this->string()->notNull(),
+            'referral_id' => $this->integer(),
             'create_time' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
         ]);
     }

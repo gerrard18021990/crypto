@@ -34,4 +34,17 @@ class CabinetController extends Controller
         ]);
     }
 
+    public function actionLogout()
+    {
+        Yii::$app->user->logout();
+        $this->goHome();
+    }
+
+    public function actionReferral()
+    {
+        return $this->render('referral', [
+            'user' => Yii::$app->user->getIdentity(),
+        ]);
+    }
+
 }

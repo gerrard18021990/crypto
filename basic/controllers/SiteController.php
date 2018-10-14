@@ -10,6 +10,19 @@ use yii\web\Controller;
 class SiteController extends Controller
 {
 
+    public function beforeAction($action)
+    {
+        if ($partner = Yii::$app->request->get('partner')) {
+            Yii::$app->response->cookies->add(new \yii\web\Cookie([
+                'name' => 'partner',
+                'value' => $partner,
+                'expire' => time() + 86400 * 365,
+                'path' => '/',
+            ]));
+        }
+        return parent::beforeAction($action);
+    }
+
     public function actionIndex()
     {
         return $this->render('index');

@@ -2,6 +2,7 @@
 
 namespace app\models;
 
+use Yii;
 use yii\db\ActiveRecord;
 use yii\web\IdentityInterface;
 
@@ -19,7 +20,23 @@ class User extends ActiveRecord implements IdentityInterface
             [['login', 'password', 'email'], 'required'],
             ['email', 'email'],
             ['username', 'string'],
+            ['referral_id', 'integer'],
         ];
+    }
+
+    public function beforeValidate()
+    {
+        if ($this->isNewRecord && $login = Yii::$app->getRequest()->getCookies()->getValue('partner')) {
+            if ($partner = self::findOne(['login' => $login])) {
+                $this->referral_id = $partner->id;
+            }
+        }
+        return parent::beforeValidate();
+    }
+
+    public function getPartners()
+    {
+        return $this->hasMany(get_class($this), ['referral_id' => 'id']);
     }
 
     public static function findIdentity($id)
